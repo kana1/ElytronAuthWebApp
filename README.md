@@ -5,12 +5,17 @@ To test this, first create the two properties files at config dir as follows
 
 ## example-users.properties
 #$REALM_NAME=examplePropRealm$
+
 user1=password123
+
 user2=password123
+
 
 ## example-roles.properties
 user1=Admin
+
 user2=Guest
+
 
 Then execute the configure_elytron.cli as
 <WILDFLY_HOME>/bin/jboss-cli.sh --connect --file=configure-elytron.cli
