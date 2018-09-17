@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to Elytron security</title>
+<title>Error</title>
 </head>
 <body>
-	Welcome to Elytron security
+	Error authenticating the user
 </body>
 </html>

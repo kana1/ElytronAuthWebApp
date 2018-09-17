@@ -3,15 +3,46 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>LoginServlet</servlet-name>
-  	<display-name>LoginServlet</display-name>
-  	<description></description>
-  	<servlet-class>lk.inli.elytron.LoginServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>LoginServlet</servlet-name>
-  	<url-pattern>/login</url-pattern>
-  </servlet-mapping>
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <display-name>LoginServlet</display-name>
+        <description></description>
+        <servlet-class>lk.inli.elytron.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+  
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>/</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <description>The role that is required to log in to /secure/*</description>
+        <role-name>Admin</role-name>
+    </security-role>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>exampleApplicationDomain</realm-name>
+        <form-login-config>
+            <form-login-page>/login_form.jsp</form-login-page>
+            <form-error-page>/error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+  
+    <!--    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>application-security</realm-name>
+        <form-login-config>
+            <form-login-page>/index.jsp</form-login-page>
+            <form-error-page>/index.jsp</form-error-page>
+        </form-login-config>
+    </login-config>-->
 </web-app>
