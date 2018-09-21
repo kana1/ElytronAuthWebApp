@@ -5,7 +5,7 @@
 <body>
 <h3>Login Page</h3>
  
-      <form id="loginform" method="POST" action="j_security_check">
+      <form id="loginform" method="GET" action="/">
          <table border="0">
             <tr>
                <td>User Name</td>
