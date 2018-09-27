@@ -8,5 +8,6 @@
 </head>
 <body>
 	Welcome to Elytron security
+        <a href="/page1.jsp">Page 1</a> | <a href="/page2.jsp">Page 2</a>
 </body>
 </html>

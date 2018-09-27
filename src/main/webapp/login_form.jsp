@@ -5,7 +5,7 @@
 <body>
 <h3>Login Page</h3>
  
-      <form id="loginform" method="GET" action="/">
+      <form id="loginform" method="POST" action="/">
          <table border="0">
             <tr>
                <td>User Name</td>
