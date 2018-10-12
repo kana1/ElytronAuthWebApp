@@ -23,7 +23,7 @@ Then execute the configure_elytron.cli as
 Go to http://localhost:8080 and you should get the login form. Enter the username and password having Admin role created in the above properties files. If success you should see the home page with message "Welcome to Elytron security "
 
 # Custom Http Authentication Mechanism
-This need ElytronHttpCustomModule as well. First update your web.xml to use "auth-method" as "CUSTOM_MECHANISM".
+This need ElytronHttpCustomModule as well. First update your web.xml to use "auth-method" as *"CUSTOM_MECHANISM"*.
 
 It is better to start with a fresh copy of stanalone.xml so that previous changes will not overlap with the following configuration changes.
 

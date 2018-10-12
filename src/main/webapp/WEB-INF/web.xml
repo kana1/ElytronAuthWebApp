@@ -29,7 +29,7 @@
         <role-name>Admin</role-name>
     </security-role>
     <login-config>
-        <auth-method>FORM</auth-method>
+        <auth-method>CUSTOM_MECHANISM</auth-method>
         <realm-name>exampleApplicationDomain</realm-name>
         <form-login-config>
             <form-login-page>/login_form.jsp</form-login-page>
