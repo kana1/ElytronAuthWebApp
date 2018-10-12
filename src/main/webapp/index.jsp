@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,5 +10,7 @@
 <body>
 	Welcome to Elytron security
         <a href="/page1.jsp">Page 1</a> | <a href="/page2.jsp">Page 2</a>
+<br>
+		<a href="/logout">Click here to log out</a>
 </body>
 </html>
